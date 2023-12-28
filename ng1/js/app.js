@@ -26,8 +26,13 @@ angular.module('todomvc', ['ngRoute','todoPartials'])
 		};
 
 		$routeProvider
+		
 			.when('/', routeConfig)
 			.when('/:status', routeConfig)
+			.when("/Home", {
+				template: "<ngx-homepage></ngx-homepage>",
+				reloadOnSearch: false
+			})
 			.otherwise({
 				redirectTo: '/'
 			});

@@ -112,3 +112,5 @@ angular.module('todomvc')
 			});
 		};
 	});
+
+	angular.bootstrap(document.body, ['todomvc'], { strictDi: true });
